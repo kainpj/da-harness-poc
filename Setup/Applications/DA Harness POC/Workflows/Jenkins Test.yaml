@@ -44,33 +44,6 @@ phases:
         templateVariables: null
         templateVersion: null
         timeoutMillis: 60000
-    - type: COMMAND
-      name: Install IIS Application
-      properties:
-        commandName: Install IIS Application
-        commandType: OTHER
-        connectionAttributeName: null
-        executeOnDelegate: true
-        host: null
-        outputVars: ''
-        publishAsVar: false
-        sshKeyRefName: null
-        sweepingOutputName: null
-        sweepingOutputScope: null
-        templateExpressions: null
-        timeoutMillis: 60000
-      templateUri: deltek/Power Shell Commands/Install IIS Application:1
-      templateVariables:
-      - name: ReleaseNo
-      - name: ServiceName
-      - name: AppPoolName
-        value: DefaultAppPool
-      - name: AppPoolDotNetVersion
-        value: v4.0
-      - name: DownloadDirectory
-        value: $env:TEMP
-      - name: AppPhysicalDirectory
-        value: $env:SYSTEMDRIVE
     stepsInParallel: false
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
