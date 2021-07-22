@@ -59,7 +59,7 @@ phases:
         sweepingOutputScope: null
         templateExpressions: null
         timeoutMillis: 60000
-      templateUri: deltek/Power Shell Commands/Install IIS Application:latest
+      templateUri: deltek/Power Shell Commands/Install IIS Application:1
       templateVariables:
       - name: ReleaseNo
       - name: ServiceName
