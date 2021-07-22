@@ -44,6 +44,22 @@ phases:
         templateVariables: null
         templateVersion: null
         timeoutMillis: 60000
+    - type: COMMAND
+      name: Install IIS Application
+      properties:
+        commandType: OTHER
+      templateUri: deltek/Power Shell Commands/Install IIS Application:latest
+      templateVariables:
+      - name: ReleaseNo
+      - name: ServiceName
+      - name: AppPoolName
+        value: DefaultAppPool
+      - name: AppPoolDotNetVersion
+        value: v4.0
+      - name: DownloadDirectory
+        value: $env:TEMP
+      - name: AppPhysicalDirectory
+        value: $env:SYSTEMDRIVE
     stepsInParallel: false
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
