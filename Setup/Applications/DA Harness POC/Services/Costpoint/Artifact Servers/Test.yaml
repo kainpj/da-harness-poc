@@ -1,0 +1,7 @@
+harnessApiVersion: '1.0'
+type: JENKINS
+artifactPaths:
+- artifact/Costpoint.zip
+jobName: testing_peter_stuff
+metadataOnly: true
+serverName: Jenkins GC-Eng

@@ -1,0 +1,12 @@
+harnessApiVersion: '1.0'
+type: OTHER
+commandUnitType: COMMAND
+commandUnits:
+- command: |-
+    curl -k -o Costpoint.zip ${artifact.url}/archive/Costpoint.zip
+    ls -la; pwd
+  commandUnitType: EXEC
+  deploymentType: SSH
+  name: Exec
+  scriptType: BASH
+targetToAllEnv: true
