@@ -47,7 +47,18 @@ phases:
     - type: COMMAND
       name: Install IIS Application
       properties:
+        commandName: Install IIS Application
         commandType: OTHER
+        connectionAttributeName: null
+        executeOnDelegate: true
+        host: null
+        outputVars: ''
+        publishAsVar: false
+        sshKeyRefName: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
+        timeoutMillis: 60000
       templateUri: deltek/Power Shell Commands/Install IIS Application:latest
       templateVariables:
       - name: ReleaseNo
