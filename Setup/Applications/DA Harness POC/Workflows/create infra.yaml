@@ -19,7 +19,7 @@ phases:
       name: Terraform Apply
       properties:
         backendConfigs: null
-        delegateTag: ''
+        delegateTag: ip-10-241-34-141.mydeltekgov.local
         environmentVariables: null
         exportPlanToApplyStep: false
         inheritApprovedPlan: false
@@ -27,7 +27,11 @@ phases:
         provisionerName: petes terraform
         runPlanOnly: false
         targets: null
-        tfVarFiles: ''
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
+        tfVarFiles:
+        - terraform
         tfVarGitFileConfig: null
         timeoutMillis: 300000
         variables:
