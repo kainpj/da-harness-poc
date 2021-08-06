@@ -4,10 +4,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = "us-gov-east-1"
-}
-
 locals {
   module_version = "0.0.0"
 }
