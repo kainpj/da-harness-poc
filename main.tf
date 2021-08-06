@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-2"
+  region = "us-gov-east-1"
   }
 resource "aws_s3_bucket" "b" {
   bucket = "${var.s3_bucket_name}"
