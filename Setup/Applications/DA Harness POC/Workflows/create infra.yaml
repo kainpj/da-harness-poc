@@ -14,6 +14,30 @@ phases:
   phaseSteps:
   - type: PREPARE_STEPS
     name: Prepare Steps
+    steps:
+    - type: TERRAFORM_APPLY
+      name: Terraform Apply
+      properties:
+        backendConfigs: null
+        delegateTag: ''
+        environmentVariables: null
+        exportPlanToApplyStep: false
+        inheritApprovedPlan: false
+        name: Terraform Apply
+        provisionerName: petes terraform
+        runPlanOnly: false
+        targets: null
+        tfVarFiles: ''
+        tfVarGitFileConfig: null
+        timeoutMillis: 300000
+        variables:
+        - name: policy_statement
+          value: null
+          valueType: TEXT
+        - name: assume_role_policy
+          value: null
+          valueType: TEXT
+        workspace: ''
     stepsInParallel: false
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
