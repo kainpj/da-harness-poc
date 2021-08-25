@@ -8,10 +8,3 @@ pipelineStages:
     type: DO_NOT_SKIP
   stageName: STAGE 1
   workflowName: create infra
-- type: ENV_STATE
-  name: Peters Workflow
-  parallel: false
-  skipCondition:
-    type: DO_NOT_SKIP
-  stageName: STAGE 2
-  workflowName: Peters Workflow
