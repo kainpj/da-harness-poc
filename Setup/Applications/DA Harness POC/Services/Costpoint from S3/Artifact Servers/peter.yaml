@@ -1,0 +1,6 @@
+harnessApiVersion: '1.0'
+type: AMAZON_S3
+artifactPaths:
+- costpoint/80/BUILD80_1444_20200704101815_FB/Costpoint.zip
+bucketName: com.deltek.automation.gc
+serverName: Amazon Web Services
